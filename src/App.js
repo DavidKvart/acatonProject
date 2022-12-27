@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Navbar from "./websiteParts/navbar";
+import Sidebar from "./websiteParts/sidbar";
+import Footer from "./websiteParts/fotter";
+import Main from "./websiteParts/main";
+import { Outlet } from "react-router-dom"; /// to use nested routes
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="gridContainer">
+        <Navbar />
+        <div className="middleContainer">
+          <Sidebar />
+          <Main />
+        </div>
+        <Footer />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
