@@ -14,6 +14,7 @@ const Main = () => {
           <Route path="arrival" element={<Arrival />} />
           <Route path="depart" element={<Departure />} />
         </Route>
+        <Route path="/map" />
       </Routes>
     </>
   );
