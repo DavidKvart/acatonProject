@@ -9,7 +9,6 @@ const App = () => {
       <div className="gridContainer">
         <Navbar />
         <div className="middleContainer">
-          <Sidebar />
           <Main />
         </div>
         <Footer />

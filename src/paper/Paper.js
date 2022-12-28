@@ -17,5 +17,30 @@ import ComponentProvider from "./bubbleContext";
 //////////inside your file were you want to use context//////
 import { useContext } from "react";
 import { NameOfContext } from "../bubbleContext";
-const { display, start } = useContext(NameOfContext);
+const { flights } = useContext(flightsContext);
 //////////////////////////////////////////////////
+
+const flights = [
+  {
+    id: 1,
+    carrier: "",
+    flightNumber: "",
+    departure: {
+      airport: "",
+      terminal: "",
+      gate: "",
+      delay: "",
+      scheduled: "",
+      estimated: "",
+    },
+    arrival: {
+      airport: "",
+      terminal: "",
+      gate: "",
+      delay: "",
+      scheduled: "",
+      estimated: "",
+    },
+    status: "", /// status on time , if 30 min befor depart=boarding, if late in  >depart min
+  },
+];
