@@ -75,6 +75,13 @@ body {
   .letter-colon::after {
     content: ":";
   }
+  .letter-dash::before {
+    content: "-";
+  }
+  
+  .letter-dash::after {
+    content: "-";
+  }
   
   /* dynamic function for character classes */
   .letter-A::before {

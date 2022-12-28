@@ -4,19 +4,19 @@ const Navbar = () => {
     <header className="p-3  border-bottom">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-            <i className="bi bi-bootstrap-fill"></i>
+          <Link to="/table" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <i className="fas fa-plane-departure"></i>
           </Link>
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <Link to="#" className="nav-link px-2 link-secondary">
-                Overview
+              <Link to="/table/depart" className="nav-link px-2 link-dark">
+                Departures
               </Link>
             </li>
             <li>
-              <Link to="#" className="nav-link px-2 link-dark">
-                Inventory
+              <Link to="/table/arrival" className="nav-link px-2 link-dark">
+                Arrivals
               </Link>
             </li>
             <li>

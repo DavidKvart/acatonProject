@@ -17,7 +17,7 @@ let fillteredDeparture = departureApi.data.map((flight, index) => {
 
   return {
     id: index,
-    carrier: flight.airline.name,
+    carrier: flight.airline.icaoCode,
     flightNumber: flight.flight.iataNumber,
     departure: {
       airport: flight.departure.iataCode,
@@ -67,7 +67,7 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
   } else message = "ON TIME";
   return {
     id: index,
-    carrier: flight.airline.name,
+    carrier: flight.airline.icaoCode,
     flightNumber: flight.flight.iataNumber,
     departure: {
       airport: flight.departure.iataCode,
@@ -75,7 +75,7 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
       gate: flight.departure.gate,
       delay: "",
       scheduled: departureSceduale,
-      eimated: departureEstimate,
+      estimated: departureEstimate,
     },
     arrival: {
       airport: flight.arrival.iataCode,
@@ -83,7 +83,7 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
       gate: flight.arrival.gate,
       delay: delaytime,
       scheduled: arrivalSceduale,
-      eimated: arrivalEstimate,
+      estimated: arrivalEstimate,
     },
     status: message,
   };

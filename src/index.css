@@ -12,11 +12,6 @@ code {
   display: flex;
   flex-direction: column;
 }
-.middleContainer {
-  display: grid;
-  grid-template-columns: 18% 85%;
-  grid-template-rows: 100%;
-}
 .formContainer {
   width: 600px;
 }
