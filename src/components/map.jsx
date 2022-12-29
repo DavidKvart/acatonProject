@@ -13,6 +13,15 @@ const Map = () => {
   const [poli, setpoli] = useState("");
   const [plane, setPlane] = useState(TR);
   const { destLon, destLat } = useContext(FlightContext);
+  const [planeLat, setPlanelat] = useState(destLat);
+  const [planeLon, setPlanelon] = useState(destLon);
+  const [counter, setCounter] = useState(0);
+  const planelocaitions = [
+    { lat: planeLat, lon: planeLon },
+    { lat: planeLat + 12, lon: planeLon + 12 },
+    { lat: planeLat + 14, lon: planeLon + 14 },
+    { lat: planeLat + 16, lon: planeLon + 16 },
+  ];
   let m = (destLon - 34.855499) / (destLat - 32.109333);
   let b = "";
   let s = "";
@@ -51,12 +60,32 @@ const Map = () => {
     setpoli(fun());
   }, []);
 
+  useEffect(() => {
+    let interval;
+
+    const updateCounter = () => {
+      setCounter((currentValue) => currentValue + 1);
+    };
+    let i = 0;
+    interval = setInterval(() => {
+      setPlanelat(planelocaitions[0].lat);
+      setPlanelon(planelocaitions[0].lon);
+      i++;
+      updateCounter();
+    }, 5000);
+
+    return () => {
+      // Clear the interval when component is unmounted
+      clearInterval(interval);
+    };
+  }, []);
+
   const fun = () => <Polyline path={path} options={options} />;
 
   return (
-    <GoogleMap zoom={3} center={{ lat: 32.109333, lng: 34.855499 }} mapContainerClassName="map-container">
+    <GoogleMap zoom={2} center={{ lat: 32.109333, lng: 34.855499 }} mapContainerClassName="map-container">
       {poli}
-      <MarkerF position={{ lat: destLat, lng: destLon }} options={{ icon: temp }} />/
+      <MarkerF position={{ lat: planeLat, lng: planeLon }} options={{ icon: temp }} />/
     </GoogleMap>
   );
 };

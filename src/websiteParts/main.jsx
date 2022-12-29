@@ -5,6 +5,7 @@ import Departure from "../components/departure";
 import Table from "../components/Table";
 import Intro from "../components/intro";
 import Map from "../components/map";
+import Live from "../components/liveView";
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <Route path="/table" element={<Table />}>
           <Route path="arrival" element={<Arrival />} />
           <Route path="depart" element={<Departure />} />
+          <Route path="live" element={<Live />} />
 
           <Route path="home" element={<Intro />} />
 
