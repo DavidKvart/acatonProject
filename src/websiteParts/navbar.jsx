@@ -4,7 +4,7 @@ const Navbar = () => {
     <header className="p-3  border-bottom">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <Link to="/table" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <Link to="/table/home" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
             <i className="fas fa-plane-departure"></i>
           </Link>
 

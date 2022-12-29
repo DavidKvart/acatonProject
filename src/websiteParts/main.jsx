@@ -13,6 +13,7 @@ const Main = () => {
         <Route path="/table" element={<Table />}>
           <Route path="arrival" element={<Arrival />} />
           <Route path="depart" element={<Departure />} />
+          <Route path="home" element={<Intro />} />
         </Route>
         <Route path="/map" />
       </Routes>
