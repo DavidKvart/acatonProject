@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
-    <header className="p-3  border-bottom">
+    <header className="p-3  border-bottom" style={{backgroundColor: "#1d1e1e",marginBottom:"0"}}  >
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <Link to="/table/home" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <Link to="/table/home" className="d-flex align-items-center mb-2 mb-lg-0 text-decoration-none" style={{color:"yellow"}}>
             <i className="fas fa-plane-departure"></i>
           </Link>
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
-              <Link to="/table/depart" className="nav-link px-2 link-dark">
+              <Link to="/table/depart" className="nav-link px-2" style={{color:"yellow"}}>
                 Departures
               </Link>
             </li>
             <li>
-              <Link to="/table/arrival" className="nav-link px-2 link-dark">
+              <Link to="/table/arrival" className="nav-link px-2" style={{color:"yellow"}}>
                 Arrivals
               </Link>
             </li>

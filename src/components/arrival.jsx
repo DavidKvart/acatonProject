@@ -56,46 +56,111 @@ const Arrival = () => {
     return str;
   };
   return (
-    <div>
-      <table style={{ width: 180 + "vh" }}>
-        <thead style={{ backgroundColor: "#1d1e1e" }}>
+    <div style={{ backgroundColor: "#1d1e1e", marginTop: "0" }}>
+      <table style={{ width: 180 + "vh", marginBottom: 4 }}>
+        <thead>
           <tr style={{ backGroundColor: "black" }}>
-            <span style={{ marginLeft: 50, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>To</span>
-            <span style={{ marginLeft: 175, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Carrier</span>
-            <span style={{ marginLeft: 125, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Gate</span>
-            <span style={{ marginLeft: 160, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Time</span>
-            <span style={{ marginLeft: 250, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Flight Number</span>
-            <span style={{ marginLeft: 250, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Status</span>
+            <span
+              style={{
+                marginLeft: 50,
+                color: "yellow",
+                fontFamily: "Chakra Petch, sans-serif",
+              }}
+            >
+              To
+            </span>
+            <span
+              style={{
+                marginLeft: 175,
+                color: "yellow",
+                fontFamily: "Chakra Petch, sans-serif",
+              }}
+            >
+              Carrier
+            </span>
+            <span
+              style={{
+                marginLeft: 125,
+                color: "yellow",
+                fontFamily: "Chakra Petch, sans-serif",
+              }}
+            >
+              Gate
+            </span>
+            <span
+              style={{
+                marginLeft: 160,
+                color: "yellow",
+                fontFamily: "Chakra Petch, sans-serif",
+              }}
+            >
+              Time
+            </span>
+            <span
+              style={{
+                marginLeft: 250,
+                color: "yellow",
+                fontFamily: "Chakra Petch, sans-serif",
+              }}
+            >
+              Flight Number
+            </span>
+            <span
+              style={{
+                marginLeft: 250,
+                color: "yellow",
+                fontFamily: "Chakra Petch, sans-serif",
+              }}
+            >
+              Status
+            </span>
           </tr>
         </thead>
         <tbody>
           {theFlights.map((value) => {
-            return <SingleFlight displayFlight={(id, type) => displayFlight(id, type)} key={value.id} destination={value.departure.airport} id={value.id} flightNum={flightFun(value.flightNumber)} carrier={value.carrier} time={value.arrival.scheduled} gate={value.arrival.gate} status={value.status} trick={trick} getMap={getMap} />;
+            return (
+              <SingleFlight
+                displayFlight={(id, type) => displayFlight(id, type)}
+                key={value.id}
+                destination={value.departure.airport}
+                id={value.id}
+                flightNum={flightFun(value.flightNumber)}
+                carrier={value.carrier}
+                time={value.arrival.scheduled}
+                gate={value.arrival.gate}
+                status={value.status}
+                trick={trick}
+                getMap={getMap}
+              />
+            );
           })}
         </tbody>
       </table>
-      <div className="btn-group " role="group" aria-label="Basic example">
-        <button
-          type="button"
-          className="btn btn-outline-primary"
-          onClick={() => {
-            if (currentPage > 1) setCurrentPage(currentPage - 1);
-          }}
-        >
-          -
-        </button>
-        <button type="button" className="btn btn-outline-primary" disabled>
-          {currentPage}
-        </button>
-        <button
-          type="button"
-          className="btn btn-outline-primary"
-          onClick={() => {
-            if (arrivals.length / 15 > currentPage) setCurrentPage(currentPage + 1);
-          }}
-        >
-          +
-        </button>
+      <div style={{ justifyContent: "center", display: "flex" }}>
+        <div className="btn-group mb-1" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            className="btn btn-outline-warning"
+            onClick={() => {
+              if (currentPage > 1) setCurrentPage(currentPage - 1);
+            }}
+          >
+            Back
+          </button>
+          <button type="button" className="btn btn-outline-warning" disabled>
+            {currentPage}
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline-warning"
+            onClick={() => {
+              if (arrivals.length / 15 > currentPage)
+                setCurrentPage(currentPage + 1);
+            }}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
