@@ -1,17 +1,10 @@
 import React, { Component } from "react";
+import { FlightContext } from "./flightContext";
+import { useContext } from "react";
 const SingleFlight = (props) => {
-  const {
-    destination,
-    id,
-    flightNum,
-    carrier,
-    time,
-    gate,
-    status,
-    getMap,
-    trick,
-  } = props;
-  console.log(time);
+  const { destination, id, flightNum, carrier, time, gate, status, getMap, trick } = props;
+  const { displayFlight } = useContext(FlightContext);
+
   let hours = time.getHours();
   let minutes = time.getMinutes();
   let theTime = (h, m) => {
@@ -32,7 +25,7 @@ const SingleFlight = (props) => {
   return (
     <React.Fragment>
       <tr>
-        <div className="departure-board" onClick={() => getMap(id)}>
+        <div className="departure-board" onClick={() => displayFlight(id, "arrival")}>
           {trick(destination)}
           <span className="letter letter-blank"></span>
           {trick(carrier)}

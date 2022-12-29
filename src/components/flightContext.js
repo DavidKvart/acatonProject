@@ -3,7 +3,9 @@ import { usarrivalEstimateate } from "react";
 import { departureApi } from "./data";
 import { arrivalApi } from "./data";
 import { useState } from "react";
+import { airport } from "./data";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const FlightContext = React.createContext("");
 
@@ -38,6 +40,7 @@ let fillteredDeparture = departureApi.data.map((flight, index) => {
     status: message,
   };
 });
+
 let fillteredArrival = arrivalApi.data.map((flight, index) => {
   let delaytime;
   let arrivalSceduale = "";
@@ -65,12 +68,14 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
   if (delaytime > 0) {
     message = "LATE";
   } else message = "ON TIME";
+
   return {
     id: index,
     carrier: flight.airline.icaoCode,
     flightNumber: flight.flight.iataNumber,
     departure: {
       airport: flight.departure.iataCode,
+      airportIcao: flight.departure.icaoCode,
       terminal: flight.departure.terminal,
       gate: flight.departure.gate,
       delay: "",
@@ -79,6 +84,7 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
     },
     arrival: {
       airport: flight.arrival.iataCode,
+      airportIcao: flight.arrival.icaoCode,
       terminal: flight.arrival.terminal,
       gate: flight.arrival.gate,
       delay: delaytime,
@@ -90,13 +96,35 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
 });
 
 const ContextProvider = ({ children }) => {
+  const navigate = useNavigate();
   const [arrivals, setArrivals] = useState(fillteredArrival);
   const [departure, setDeparture] = useState(fillteredDeparture);
-  const [counter, setCounter] = useState(0);
+  const [destLat, setDestLat] = useState(51.509865);
+  const [destLon, setDestLon] = useState(-0.118092);
+  let airportArr = Object.entries(airport);
+  const displayFlight = (id, type) => {
+    let airportIcao = "";
+    let icaoCode = "";
+    let lon = "";
+    let lat = "";
 
-  console.log(departure);
-  console.log(arrivals);
-  return <FlightContext.Provider value={{ arrivals, departure }}>{children}</FlightContext.Provider>;
+    if (type == "arrival") {
+      airportIcao = arrivals.find((f) => f.id == id);
+
+      icaoCode = airportIcao.departure.airportIcao;
+
+      let airportLocaition = airportArr.find((air) => air[0] == icaoCode);
+      setDestLat(airportLocaition[1].lat);
+      setDestLon(airportLocaition[1].lon);
+      console.log(destLat);
+      console.log(destLon);
+      navigate("/table/map");
+
+      return airportLocaition;
+    }
+  };
+
+  return <FlightContext.Provider value={{ displayFlight, arrivals, departure, destLat, destLon }}>{children}</FlightContext.Provider>;
 };
 
 export default ContextProvider;

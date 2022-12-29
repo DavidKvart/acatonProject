@@ -5,7 +5,7 @@ import SingleFlight from "./tableRow";
 import "./try.css";
 
 const Arrival = () => {
-  const { arrivals } = useContext(FlightContext);
+  const { arrivals, displayFlight } = useContext(FlightContext);
   const [currentPage, setCurrentPage] = useState(1);
   const startIn = (currentPage - 1) * 15;
   const endIn = startIn + 15;
@@ -58,34 +58,19 @@ const Arrival = () => {
   return (
     <div>
       <table style={{ width: 180 + "vh" }}>
-      <thead style={{backgroundColor:"#1d1e1e"}}>
+        <thead style={{ backgroundColor: "#1d1e1e" }}>
           <tr style={{ backGroundColor: "black" }}>
-            <span style={{ marginLeft: 50, color: "yellow",fontFamily:"Chakra Petch, sans-serif" }} >To</span>
-            <span style={{ marginLeft: 175,color: "yellow",fontFamily:"Chakra Petch, sans-serif" }}>Carrier</span>
-            <span style={{ marginLeft: 125, color: "yellow",fontFamily:"Chakra Petch, sans-serif" }}>
-              Gate
-            </span>
-            <span style={{ marginLeft: 160, color: "yellow",fontFamily:"Chakra Petch, sans-serif" }}>Time</span>
-            <span style={{ marginLeft: 250,color: "yellow",fontFamily:"Chakra Petch, sans-serif" }}>Flight Number</span>
-            <span style={{ marginLeft: 250, color: "yellow",fontFamily:"Chakra Petch, sans-serif" }}>Status</span>
+            <span style={{ marginLeft: 50, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>To</span>
+            <span style={{ marginLeft: 175, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Carrier</span>
+            <span style={{ marginLeft: 125, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Gate</span>
+            <span style={{ marginLeft: 160, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Time</span>
+            <span style={{ marginLeft: 250, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Flight Number</span>
+            <span style={{ marginLeft: 250, color: "yellow", fontFamily: "Chakra Petch, sans-serif" }}>Status</span>
           </tr>
         </thead>
         <tbody>
           {theFlights.map((value) => {
-            return (
-              <SingleFlight
-                key={value.id}
-                destination={value.departure.airport}
-                id={value.id}
-                flightNum={flightFun(value.flightNumber)}
-                carrier={value.carrier}
-                time={value.arrival.scheduled}
-                gate={value.arrival.gate}
-                status={value.status}
-                trick={trick}
-                getMap={getMap}
-              />
-            );
+            return <SingleFlight displayFlight={(id, type) => displayFlight(id, type)} key={value.id} destination={value.departure.airport} id={value.id} flightNum={flightFun(value.flightNumber)} carrier={value.carrier} time={value.arrival.scheduled} gate={value.arrival.gate} status={value.status} trick={trick} getMap={getMap} />;
           })}
         </tbody>
       </table>
@@ -106,8 +91,7 @@ const Arrival = () => {
           type="button"
           className="btn btn-outline-primary"
           onClick={() => {
-            if (arrivals.length / 15 > currentPage)
-              setCurrentPage(currentPage + 1);
+            if (arrivals.length / 15 > currentPage) setCurrentPage(currentPage + 1);
           }}
         >
           +

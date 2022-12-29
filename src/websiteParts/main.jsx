@@ -4,6 +4,7 @@ import Arrival from "../components/arrival";
 import Departure from "../components/departure";
 import Table from "../components/Table";
 import Intro from "../components/intro";
+import Map from "../components/map";
 
 const Main = () => {
   return (
@@ -13,7 +14,10 @@ const Main = () => {
         <Route path="/table" element={<Table />}>
           <Route path="arrival" element={<Arrival />} />
           <Route path="depart" element={<Departure />} />
+
           <Route path="home" element={<Intro />} />
+
+          <Route path="map" element={<Map />} />
         </Route>
         <Route path="/map" />
       </Routes>
@@ -22,4 +26,3 @@ const Main = () => {
 };
 
 export default Main;
-<div></div>;
