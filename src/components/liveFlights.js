@@ -3,6 +3,1647 @@ export const liveFlights = {
   data: [
     {
       aircraft: {
+        iataCode: "A339",
+        icao24: "A4BF95",
+        icaoCode: "A339",
+        regNumber: "N405DX",
+      },
+      airline: {
+        iataCode: "DL",
+        icaoCode: "DAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "JFK",
+        icaoCode: "KJFK",
+      },
+      flight: {
+        iataNumber: "DL234",
+        icaoNumber: "DAL234",
+        number: "234",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 74,
+        latitude: 48.54,
+        longitude: -51.81,
+      },
+      speed: {
+        horizontal: 1027.86,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297856,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B78X",
+        icao24: "A05646",
+        icaoCode: "B78X",
+        regNumber: "N12010",
+      },
+      airline: {
+        iataCode: "UA",
+        icaoCode: "UAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "EWR",
+        icaoCode: "KEWR",
+      },
+      flight: {
+        iataNumber: "UA90",
+        icaoNumber: "UAL90",
+        number: "90",
+      },
+      geography: {
+        altitude: 11270,
+        direction: 68,
+        latitude: 48.01,
+        longitude: -53.97,
+      },
+      speed: {
+        horizontal: 1022.3,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297855,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B772",
+        icao24: "AA6B9F",
+        icaoCode: "B772",
+        regNumber: "N77014",
+      },
+      airline: {
+        iataCode: "UA",
+        icaoCode: "UAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "SFO",
+        icaoCode: "KSFO",
+      },
+      flight: {
+        iataNumber: "UA954",
+        icaoNumber: "UAL954",
+        number: "954",
+      },
+      geography: {
+        altitude: 10058.4,
+        direction: 78,
+        latitude: 50.06,
+        longitude: -87.54,
+      },
+      speed: {
+        horizontal: 1066.75,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297597,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B738",
+        icao24: "4BA906",
+        icaoCode: "B738",
+        regNumber: "TC-JHF",
+      },
+      airline: {
+        iataCode: "",
+        icaoCode: "",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "SAW",
+        icaoCode: "LTFJ",
+      },
+      flight: {
+        iataNumber: "TK7708",
+        icaoNumber: "THY7LY",
+        number: "7708",
+      },
+      geography: {
+        altitude: 0,
+        direction: 64,
+        latitude: 40.89,
+        longitude: 29.29,
+      },
+      speed: {
+        horizontal: 1.852,
+        isGround: 1,
+        vspeed: 0,
+      },
+      status: "started",
+      system: {
+        squawk: null,
+        updated: 1672297861,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B77W",
+        icao24: "4BA954",
+        icaoCode: "B77W",
+        regNumber: "TC-JJT",
+      },
+      airline: {
+        iataCode: "TK",
+        icaoCode: "THY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "IST",
+        icaoCode: "LTBA",
+      },
+      flight: {
+        iataNumber: "TK784",
+        icaoNumber: "THY1PH",
+        number: "784",
+      },
+      geography: {
+        altitude: 2499.36,
+        direction: 123,
+        latitude: 32.32,
+        longitude: 34.3,
+      },
+      speed: {
+        horizontal: 518.56,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "unknown",
+      system: {
+        squawk: null,
+        updated: 1672297502,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B78X",
+        icao24: "A05626",
+        icaoCode: "B78X",
+        regNumber: "N12003",
+      },
+      airline: {
+        iataCode: "UA",
+        icaoCode: "UAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "EWR",
+        icaoCode: "KEWR",
+      },
+      flight: {
+        iataNumber: "UA84",
+        icaoNumber: "UAL84",
+        number: "84",
+      },
+      geography: {
+        altitude: 1363.98,
+        direction: 232,
+        latitude: 32.2,
+        longitude: 34.58,
+      },
+      speed: {
+        horizontal: 381.512,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297871,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B789",
+        icao24: "C038CA",
+        icaoCode: "B789",
+        regNumber: "C-FVND",
+      },
+      airline: {
+        iataCode: "AC",
+        icaoCode: "ACA",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "YYZ",
+        icaoCode: "CYYZ",
+      },
+      flight: {
+        iataNumber: "AC80",
+        icaoNumber: "ACA80",
+        number: "80",
+      },
+      geography: {
+        altitude: 11887.2,
+        direction: 144,
+        latitude: 38.35,
+        longitude: 28.84,
+      },
+      speed: {
+        horizontal: 959.336,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297860,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B752",
+        icao24: "440BC7",
+        icaoCode: "B752",
+        regNumber: "OE-LNK",
+      },
+      airline: {
+        iataCode: "D0",
+        icaoCode: "DHK",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "BRU",
+        icaoCode: "EBBR",
+      },
+      flight: {
+        iataNumber: "QY994",
+        icaoNumber: "BCS994",
+        number: "994",
+      },
+      geography: {
+        altitude: 1531.62,
+        direction: 121,
+        latitude: 32.16,
+        longitude: 34.58,
+      },
+      speed: {
+        horizontal: 431.516,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297577,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A320",
+        icao24: "89405B",
+        icaoCode: "A320",
+        regNumber: "A9C-AD",
+      },
+      airline: {
+        iataCode: "GF",
+        icaoCode: "GFA",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "BAH",
+        icaoCode: "OBBI",
+      },
+      flight: {
+        iataNumber: "GF972",
+        icaoNumber: "GFA972",
+        number: "972",
+      },
+      geography: {
+        altitude: 10363.2,
+        direction: 296,
+        latitude: 28.41,
+        longitude: 45.63,
+      },
+      speed: {
+        horizontal: 753.764,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297856,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B789",
+        icao24: "7380C0",
+        icaoCode: "B789",
+        regNumber: "4X-EDA",
+      },
+      airline: {
+        iataCode: "LY",
+        icaoCode: "ELY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "JFK",
+        icaoCode: "KJFK",
+      },
+      flight: {
+        iataNumber: "LY8",
+        icaoNumber: "ELY008",
+        number: "8",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 81,
+        latitude: 45.99,
+        longitude: -50.04,
+      },
+      speed: {
+        horizontal: 1087.12,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297884,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B789",
+        icao24: "7380C4",
+        icaoCode: "B789",
+        regNumber: "4X-EDE",
+      },
+      airline: {
+        iataCode: "LY",
+        icaoCode: "ELY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "JFK",
+        icaoCode: "KJFK",
+      },
+      flight: {
+        iataNumber: "LY2",
+        icaoNumber: "ELY002",
+        number: "2",
+      },
+      geography: {
+        altitude: 11270,
+        direction: 117,
+        latitude: 36.87,
+        longitude: 25.36,
+      },
+      speed: {
+        horizontal: 922.296,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297859,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A320",
+        icao24: "600853",
+        icaoCode: "A320",
+        regNumber: "4K-AZ83",
+      },
+      airline: {
+        iataCode: "J2",
+        icaoCode: "AHY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "GYD",
+        icaoCode: "UBBB",
+      },
+      flight: {
+        iataNumber: "J221",
+        icaoNumber: "AHY021",
+        number: "21",
+      },
+      geography: {
+        altitude: 10370.8,
+        direction: 240,
+        latitude: 40.29,
+        longitude: 38.07,
+      },
+      speed: {
+        horizontal: 788.952,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297860,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A21N",
+        icao24: "4BC859",
+        icaoCode: "A21N",
+        regNumber: "TC-RBY",
+      },
+      airline: {
+        iataCode: "PC",
+        icaoCode: "PGT",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "SAW",
+        icaoCode: "LTFJ",
+      },
+      flight: {
+        iataNumber: "PC795",
+        icaoNumber: "PGT795",
+        number: "795",
+      },
+      geography: {
+        altitude: 1699.26,
+        direction: 124,
+        latitude: 32.21,
+        longitude: 34.5,
+      },
+      speed: {
+        horizontal: 501.892,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "unknown",
+      system: {
+        squawk: null,
+        updated: 1672297502,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B788",
+        icao24: "A59601",
+        icaoCode: "B788",
+        regNumber: "N45905",
+      },
+      airline: {
+        iataCode: "UA",
+        icaoCode: "UAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "IAD",
+        icaoCode: "KIAD",
+      },
+      flight: {
+        iataNumber: "UA72",
+        icaoNumber: "UAL72",
+        number: "72",
+      },
+      geography: {
+        altitude: 11879.6,
+        direction: 70,
+        latitude: 47.52,
+        longitude: -51.91,
+      },
+      speed: {
+        horizontal: 1057.49,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297856,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A339",
+        icao24: "A4C34C",
+        icaoCode: "A339",
+        regNumber: "N406DX",
+      },
+      airline: {
+        iataCode: "DL",
+        icaoCode: "DAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "JFK",
+        icaoCode: "KJFK",
+      },
+      flight: {
+        iataNumber: "DL9934",
+        icaoNumber: "DAL9934",
+        number: "9934",
+      },
+      geography: {
+        altitude: 11887.2,
+        direction: 114,
+        latitude: 50.05,
+        longitude: 8.63,
+      },
+      speed: {
+        horizontal: 905.628,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297270,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B789",
+        icao24: "7380C2",
+        icaoCode: "B789",
+        regNumber: "4X-EDC",
+      },
+      airline: {
+        iataCode: "LY",
+        icaoCode: "ELY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "LAX",
+        icaoCode: "KLAX",
+      },
+      flight: {
+        iataNumber: "LY6",
+        icaoNumber: "ELY006",
+        number: "6",
+      },
+      geography: {
+        altitude: 11574.8,
+        direction: 108,
+        latitude: 51.5,
+        longitude: -2,
+      },
+      speed: {
+        horizontal: 992.672,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297859,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B772",
+        icao24: "AAD213",
+        icaoCode: "B772",
+        regNumber: "N797AN",
+      },
+      airline: {
+        iataCode: "AA",
+        icaoCode: "AAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "JFK",
+        icaoCode: "KJFK",
+      },
+      flight: {
+        iataNumber: "AA146",
+        icaoNumber: "AAL146",
+        number: "146",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 69,
+        latitude: 48.1,
+        longitude: -53.6,
+      },
+      speed: {
+        horizontal: 1016.75,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297857,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B788",
+        icao24: "AB034D",
+        icaoCode: "B788",
+        regNumber: "N809AA",
+      },
+      airline: {
+        iataCode: "AA",
+        icaoCode: "AAL",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "MIA",
+        icaoCode: "KMIA",
+      },
+      flight: {
+        iataNumber: "AA52",
+        icaoNumber: "AAL52",
+        number: "52",
+      },
+      geography: {
+        altitude: 11277.6,
+        direction: 69,
+        latitude: 46.5,
+        longitude: -56.36,
+      },
+      speed: {
+        horizontal: 1061.2,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297869,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A21N",
+        icao24: "46B821",
+        icaoCode: "A21N",
+        regNumber: "SX-NAA",
+      },
+      airline: {
+        iataCode: "A3",
+        icaoCode: "AEE",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "ATH",
+        icaoCode: "LGAV",
+      },
+      flight: {
+        iataNumber: "A3926",
+        icaoNumber: "AEE926",
+        number: "926",
+      },
+      geography: {
+        altitude: 3535.68,
+        direction: 133,
+        latitude: 32.5,
+        longitude: 34.03,
+      },
+      speed: {
+        horizontal: 568.564,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672296969,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B744",
+        icao24: "738C06",
+        icaoCode: "B744",
+        regNumber: "4X-ICA",
+      },
+      airline: {
+        iataCode: "X7",
+        icaoCode: "CHG",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "LGG",
+        icaoCode: "EBLG",
+      },
+      flight: {
+        iataNumber: "5C942",
+        icaoNumber: "ICL942",
+        number: "942",
+      },
+      geography: {
+        altitude: 11277.6,
+        direction: 124,
+        latitude: 48.19,
+        longitude: 11.53,
+      },
+      speed: {
+        horizontal: 911.184,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297573,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B789",
+        icao24: "7380C9",
+        icaoCode: "B789",
+        regNumber: "4X-EDK",
+      },
+      airline: {
+        iataCode: "LY",
+        icaoCode: "ELY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "EWR",
+        icaoCode: "KEWR",
+      },
+      flight: {
+        iataNumber: "LY26",
+        icaoNumber: "ELY026",
+        number: "26",
+      },
+      geography: {
+        altitude: 11879.6,
+        direction: 114,
+        latitude: 44.4,
+        longitude: -12.68,
+      },
+      speed: {
+        horizontal: 1107.5,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297609,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B39M",
+        icao24: "896516",
+        icaoCode: "B39M",
+        regNumber: "A6-FNC",
+      },
+      airline: {
+        iataCode: "FZ",
+        icaoCode: "FDB",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "DXB",
+        icaoCode: "OMDB",
+      },
+      flight: {
+        iataNumber: "FZ1549",
+        icaoNumber: "FDB1549",
+        number: "1549",
+      },
+      geography: {
+        altitude: 1729.74,
+        direction: 294,
+        latitude: 32.1,
+        longitude: 35.1,
+      },
+      speed: {
+        horizontal: 466.704,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "unknown",
+      system: {
+        squawk: null,
+        updated: 1672297502,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A321",
+        icao24: "471F6E",
+        icaoCode: "A321",
+        regNumber: "HA-LXM",
+      },
+      airline: {
+        iataCode: "W6",
+        icaoCode: "WZZ",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "WAW",
+        icaoCode: "EPWA",
+      },
+      flight: {
+        iataNumber: "W61559",
+        icaoNumber: "WZZ5204",
+        number: "1559",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 145,
+        latitude: 41.15,
+        longitude: 27.25,
+      },
+      speed: {
+        horizontal: 877.848,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297859,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A320",
+        icao24: "440395",
+        icaoCode: "A320",
+        regNumber: "OE-IZO",
+      },
+      airline: {
+        iataCode: "U2",
+        icaoCode: "EZY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "BER",
+        icaoCode: "EDDB",
+      },
+      flight: {
+        iataNumber: "U25201",
+        icaoNumber: "EJU5201",
+        number: "5201",
+      },
+      geography: {
+        altitude: 10675.6,
+        direction: 137,
+        latitude: 48,
+        longitude: 19.35,
+      },
+      speed: {
+        horizontal: 833.4,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297571,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A21N",
+        icao24: "4D241A",
+        icaoCode: "A21N",
+        regNumber: "9H-WAF",
+      },
+      airline: {
+        iataCode: "W6",
+        icaoCode: "WZZ",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "VCE",
+        icaoCode: "LIPZ",
+      },
+      flight: {
+        iataNumber: "W65455",
+        icaoNumber: "WZZ1501",
+        number: "5455",
+      },
+      geography: {
+        altitude: 10660.4,
+        direction: 127,
+        latitude: 43.18,
+        longitude: 18.16,
+      },
+      speed: {
+        horizontal: 785.248,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297861,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A21N",
+        icao24: "4D241F",
+        icaoCode: "A21N",
+        regNumber: "9H-WAJ",
+      },
+      airline: {
+        iataCode: "W6",
+        icaoCode: "WZZ",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "FCO",
+        icaoCode: "LIRF",
+      },
+      flight: {
+        iataNumber: "W68287",
+        icaoNumber: "WZZ1439",
+        number: "8287",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 114,
+        latitude: 36.1,
+        longitude: 26.52,
+      },
+      speed: {
+        horizontal: 905.628,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297859,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A320",
+        icao24: "4691C1",
+        icaoCode: "A320",
+        regNumber: "SX-DNA",
+      },
+      airline: {
+        iataCode: "A3",
+        icaoCode: "AEE",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "SKG",
+        icaoCode: "LGTS",
+      },
+      flight: {
+        iataNumber: "A3548",
+        icaoNumber: "AEE548",
+        number: "548",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 134,
+        latitude: 38.36,
+        longitude: 26.96,
+      },
+      speed: {
+        horizontal: 888.96,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297859,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B38M",
+        icao24: "48C2AC",
+        icaoCode: "B38M",
+        regNumber: "SP-RZM",
+      },
+      airline: {
+        iataCode: "FR",
+        icaoCode: "RYR",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "BUD",
+        icaoCode: "LHBP",
+      },
+      flight: {
+        iataNumber: "FR839",
+        icaoNumber: "RYR839",
+        number: "839",
+      },
+      geography: {
+        altitude: 11277.6,
+        direction: 128,
+        latitude: 33.8,
+        longitude: 32.16,
+      },
+      speed: {
+        horizontal: 907.48,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297871,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "GLF6",
+        icao24: "4D2331",
+        icaoCode: "GLF6",
+        regNumber: "9H-BBH",
+      },
+      airline: {
+        iataCode: "MA",
+        icaoCode: "EAU",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "WAW",
+        icaoCode: "EPWA",
+      },
+      flight: {
+        iataNumber: "XXD",
+        icaoNumber: "EAU22H",
+        number: "XXF",
+      },
+      geography: {
+        altitude: 13716,
+        direction: 142,
+        latitude: 35.16,
+        longitude: 31.65,
+      },
+      speed: {
+        horizontal: 1016.75,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297873,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B738",
+        icao24: "4D2286",
+        icaoCode: "B738",
+        regNumber: "9H-QDP",
+      },
+      airline: {
+        iataCode: "FR",
+        icaoCode: "RYR",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "NAP",
+        icaoCode: "LIRN",
+      },
+      flight: {
+        iataNumber: "FR8695",
+        icaoNumber: "RYR8695",
+        number: "8695",
+      },
+      geography: {
+        altitude: 11277.6,
+        direction: 115,
+        latitude: 35.3,
+        longitude: 28.64,
+      },
+      speed: {
+        horizontal: 866.736,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297260,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B789",
+        icao24: "78105E",
+        icaoCode: "B789",
+        regNumber: "B-1543",
+      },
+      airline: {
+        iataCode: "HU",
+        icaoCode: "CHH",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "PVG",
+        icaoCode: "ZSPD",
+      },
+      flight: {
+        iataNumber: "HU777",
+        icaoNumber: "CHH777",
+        number: "777",
+      },
+      geography: {
+        altitude: 11612.9,
+        direction: 279,
+        latitude: 41.7,
+        longitude: 107.17,
+      },
+      speed: {
+        horizontal: 864.884,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297578,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B752",
+        icao24: "440BCE",
+        icaoCode: "B752",
+        regNumber: "OE-LNX",
+      },
+      airline: {
+        iataCode: "D0",
+        icaoCode: "DHK",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "LEJ",
+        icaoCode: "EDDP",
+      },
+      flight: {
+        iataNumber: "XXD",
+        icaoNumber: "BCS1VR",
+        number: "XXF",
+      },
+      geography: {
+        altitude: 9654.54,
+        direction: 129,
+        latitude: 33.28,
+        longitude: 32.92,
+      },
+      speed: {
+        horizontal: 900.072,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297871,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B38M",
+        icao24: "8965CC",
+        icaoCode: "B38M",
+        regNumber: "A6-FKA",
+      },
+      airline: {
+        iataCode: "FZ",
+        icaoCode: "FDB",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "DXB",
+        icaoCode: "OMDB",
+      },
+      flight: {
+        iataNumber: "FZ1209",
+        icaoNumber: "FDB1209",
+        number: "1209",
+      },
+      geography: {
+        altitude: 10972.8,
+        direction: 285,
+        latitude: 26.74,
+        longitude: 50.34,
+      },
+      speed: {
+        horizontal: 711.168,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297571,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B738",
+        icao24: "4BA915",
+        icaoCode: "B738",
+        regNumber: "TC-JHU",
+      },
+      airline: {
+        iataCode: "TK",
+        icaoCode: "THY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "IST",
+        icaoCode: "LTBA",
+      },
+      flight: {
+        iataNumber: "TK794",
+        icaoNumber: "THY4FA",
+        number: "794",
+      },
+      geography: {
+        altitude: 0,
+        direction: 106,
+        latitude: 41.26,
+        longitude: 28.74,
+      },
+      speed: {
+        horizontal: 0,
+        isGround: 1,
+        vspeed: 0,
+      },
+      status: "started",
+      system: {
+        squawk: null,
+        updated: 1672297856,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B752",
+        icao24: "AC7364",
+        icaoCode: "B752",
+        regNumber: "N901FD",
+      },
+      airline: {
+        iataCode: "FX",
+        icaoCode: "FDX",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "VIE",
+        icaoCode: "LOWW",
+      },
+      flight: {
+        iataNumber: "FX6213",
+        icaoNumber: "FDX6213",
+        number: "6213",
+      },
+      geography: {
+        altitude: 11887.2,
+        direction: 142,
+        latitude: 42.25,
+        longitude: 21.13,
+      },
+      speed: {
+        horizontal: 850.068,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297564,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A21N",
+        icao24: "440614",
+        icaoCode: "A21N",
+        regNumber: "OE-ISC",
+      },
+      airline: {
+        iataCode: "U2",
+        icaoCode: "EZY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "MXP",
+        icaoCode: "LIMC",
+      },
+      flight: {
+        iataNumber: "U22563",
+        icaoNumber: "EJU12CD",
+        number: "2563",
+      },
+      geography: {
+        altitude: 10668,
+        direction: 120,
+        latitude: 43.48,
+        longitude: 16.74,
+      },
+      speed: {
+        horizontal: 796.36,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297859,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "A20N",
+        icao24: "440CBE",
+        icaoCode: "A20N",
+        regNumber: "OE-LSN",
+      },
+      airline: {
+        iataCode: "U2",
+        icaoCode: "EZY",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "AMS",
+        icaoCode: "EHAM",
+      },
+      flight: {
+        iataNumber: "U27933",
+        icaoNumber: "EJU73AX",
+        number: "7933",
+      },
+      geography: {
+        altitude: 11292.8,
+        direction: 120,
+        latitude: 50.42,
+        longitude: 9.31,
+      },
+      speed: {
+        horizontal: 885.256,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297577,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B38M",
+        icao24: "48AF0C",
+        icaoCode: "B38M",
+        regNumber: "SP-LVM",
+      },
+      airline: {
+        iataCode: "LO",
+        icaoCode: "LOT",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "WAW",
+        icaoCode: "EPWA",
+      },
+      flight: {
+        iataNumber: "LO153",
+        icaoNumber: "LOT153",
+        number: "153",
+      },
+      geography: {
+        altitude: 11277.6,
+        direction: 148,
+        latitude: 44.48,
+        longitude: 24.41,
+      },
+      speed: {
+        horizontal: 888.96,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297564,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B738",
+        icao24: "4BCE05",
+        icaoCode: "B738",
+        regNumber: "TC-SPE",
+      },
+      airline: {
+        iataCode: "XQ",
+        icaoCode: "SXS",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "AYT",
+        icaoCode: "LTAI",
+      },
+      flight: {
+        iataNumber: "XQ206",
+        icaoNumber: "SXS206",
+        number: "206",
+      },
+      geography: {
+        altitude: 4709.16,
+        direction: 177,
+        latitude: 33.03,
+        longitude: 33.92,
+      },
+      speed: {
+        horizontal: 596.344,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672296942,
+      },
+    },
+    {
+      aircraft: {
+        iataCode: "B38M",
+        icao24: "4D2349",
+        icaoCode: "B38M",
+        regNumber: "9H-VUJ",
+      },
+      airline: {
+        iataCode: "FR",
+        icaoCode: "RYR",
+      },
+      arrival: {
+        iataCode: "TLV",
+        icaoCode: "LLBG",
+      },
+      departure: {
+        iataCode: "BGY",
+        icaoCode: "LIME",
+      },
+      flight: {
+        iataNumber: "FR3414",
+        icaoNumber: "RYR3414",
+        number: "3414",
+      },
+      geography: {
+        altitude: 11277.6,
+        direction: 131,
+        latitude: 40.5,
+        longitude: 22.78,
+      },
+      speed: {
+        horizontal: 864.884,
+        isGround: 0,
+        vspeed: 0,
+      },
+      status: "en-route",
+      system: {
+        squawk: null,
+        updated: 1672297564,
+      },
+    },
+
+    {
+      aircraft: {
         iataCode: "B78X",
         icao24: "A05626",
         icaoCode: "B78X",
@@ -1315,3 +2956,32 @@ export const liveFlights = {
     },
   ],
 };
+
+// const App = () => {
+
+//   const [punchLine, setPunchLine] = useState("");
+
+//   function getJokes() {
+//     axios
+//       .get(" https://official-joke-api.appspot.com/random_joke")
+//       .then((res) => {
+//         setJoke(res.data.setup);
+//         setPunchLine(res.data.punchline);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//       });
+//   }
+//   useEffect(() => {
+//     getJokes();
+//   }, []);
+
+//   return (
+//     <div>
+//       <p>{joke}</p>
+//       <p>{punchLine}</p>
+//     </div>
+//   );
+// };
+
+// export default App;

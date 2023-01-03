@@ -1,12 +1,9 @@
 import { Outlet } from "react-router-dom";
 
-import ContextProvider from "./flightContext";
 const Table = () => {
   return (
     <div>
-      <ContextProvider>
-        <Outlet />
-      </ContextProvider>
+      <Outlet />
     </div>
   );
 };

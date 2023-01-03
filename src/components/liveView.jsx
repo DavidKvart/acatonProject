@@ -9,9 +9,25 @@ import BL from "./image/BL.png";
 import BR from "./image/BR.png";
 import TL from "./image/TL.png";
 import TR from "./image/TR.png";
+import { pullFlights } from "./liveFlights";
+import axios from "axios";
 
-const Live = () => {
+function Live() {
   const [poli, setpoli] = useState("");
+  const [live, setLive] = useState([]);
+  ////////////////////////////////////
+  function getJokes() {
+    axios
+      .get(" http://localhost:3000/api/live")
+      .then((res) => {
+        setLive(res);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLive(liveFlights);
+      });
+  }
+  ///////////////////////////////
   let airportArr = Object.entries(airport);
   let airportLocaition = "";
   const {} = useLoadScript({ googleMapsApiKey: "AIzaSyDrP0MZf6dsj0wre3r6TL0nBliPCTFuWEo" });
@@ -34,49 +50,39 @@ const Live = () => {
       draggable: false,
       editable: false,
       visible: true,
-      // geodesic: true,
       radius: 2000,
       paths: path,
     };
+    let b = "";
+    let s = "";
+    let temp = "";
+    if (airportLocaition[1].lat > 32.109333) {
+      if (airportLocaition[1].lon > 32.109333) {
+        temp = BL;
+      } else temp = BR;
+    } else {
+      if (airportLocaition[1].lon > 32.109333) {
+        temp = TL;
+      } else temp = TR;
+    }
 
     return (
       <>
         <Polyline path={path} options={option} />
-        <MarkerF position={{ lat: flight.geography.latitude, lng: flight.geography.longitude }} options={{ icon: BL }} />/
+        <MarkerF position={{ lat: flight.geography.latitude, lng: flight.geography.longitude }} options={{ icon: temp }} />/
       </>
     );
   });
-
-  //   let path = [
-  //     { lat: 41.2971000671, lng: 2.0784599781 },
-  //     { lat: 37.34, lng: 22.86 },
-  //     { lat: 32.109333, lng: 34.855499 },
-  //   ];
-  //   let option = {
-  //     strokeColor: "#FF0000",
-  //     strokeOpacity: 0.8,
-  //     strokeWeight: 2,
-  //     fillColor: "#FF0000",
-  //     fillOpacity: 0.35,
-  //     clickable: false,
-  //     draggable: false,
-  //     editable: false,
-  //     visible: true,
-  //     geodesic: true,
-  //     radius: 2000,
-  //     paths: path,
-  //   };
-  //   useEffect(() => {
-  //     setpoli(fun());
-  //   }, []);
-
-  //   const fun = () => <Polyline path={path} options={option} />;
+  useEffect(() => {
+    getJokes();
+    console.log(live);
+  }, []);
 
   return (
     <GoogleMap zoom={3} center={{ lat: 32.109333, lng: 34.855499 }} mapContainerClassName="map-container">
       {display}
     </GoogleMap>
   );
-};
+}
 
 export default Live;

@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { FlightContext } from "./flightContext";
 
 const Map = () => {
-  const {} = useLoadScript({ googleMapsApiKey: "AIzaSyDrP0MZf6dsj0wre3r6TL0nBliPCTFuWEo" });
+  const { isLoaded } = useLoadScript({ googleMapsApiKey: "AIzaSyDrP0MZf6dsj0wre3r6TL0nBliPCTFuWEo" });
   const [poli, setpoli] = useState("");
   const [plane, setPlane] = useState(TR);
   const { destLon, destLat } = useContext(FlightContext);
@@ -60,30 +60,10 @@ const Map = () => {
     setpoli(fun());
   }, []);
 
-  useEffect(() => {
-    let interval;
-
-    const updateCounter = () => {
-      setCounter((currentValue) => currentValue + 1);
-    };
-    let i = 0;
-    interval = setInterval(() => {
-      setPlanelat(planelocaitions[0].lat);
-      setPlanelon(planelocaitions[0].lon);
-      i++;
-      updateCounter();
-    }, 5000);
-
-    return () => {
-      // Clear the interval when component is unmounted
-      clearInterval(interval);
-    };
-  }, []);
-
   const fun = () => <Polyline path={path} options={options} />;
-
+  if (!isLoaded) return <div>loading ...</div>;
   return (
-    <GoogleMap zoom={2} center={{ lat: 32.109333, lng: 34.855499 }} mapContainerClassName="map-container">
+    <GoogleMap zoom={3} center={{ lat: 32.109333, lng: 34.855499 }} mapContainerClassName="map-container">
       {poli}
       <MarkerF position={{ lat: planeLat, lng: planeLon }} options={{ icon: temp }} />/
     </GoogleMap>

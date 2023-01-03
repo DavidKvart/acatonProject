@@ -6,20 +6,25 @@ const SingleFlight = (props) => {
   const { displayFlight } = useContext(FlightContext);
 
   let hours = time.getHours();
+
   let minutes = time.getMinutes();
+
   let theTime = (h, m) => {
     if (h < 10 && m < 10) {
       m = "0" + m;
       h = "0" + h;
-      return h + ":" + m;
+      let temp = h + ":" + m;
+      return temp;
     } else if (m < 10) {
       m = "0" + m;
       return h + ":" + m;
     } else if (h < 10) {
       h = "0" + h;
       return h + ":" + m;
-    } else {
+    } else if (h == null || m == null) {
       return "--:--";
+    } else {
+      return h + ":" + m;
     }
   };
   return (

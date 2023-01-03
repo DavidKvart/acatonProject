@@ -119,20 +119,7 @@ const Departure = () => {
         </thead>
         <tbody>
           {theFlights.map((value) => {
-            return (
-              <SingleFlight
-                key={value.id}
-                destination={value.arrival.airport}
-                id={value.id}
-                flightNum={flightFun(value.flightNumber)}
-                carrier={value.carrier}
-                gate={value.departure.gate}
-                time={value.departure.estimated}
-                status={value.status}
-                trick={trick}
-                getMap={getMap}
-              />
-            );
+            return <SingleFlight key={value.id} destination={value.arrival.airport} id={value.id} flightNum={flightFun(value.flightNumber)} carrier={value.carrier} gate={value.departure.gate} time={value.departure.scheduled} status={value.status} trick={trick} getMap={getMap} />;
           })}
         </tbody>
       </table>
@@ -154,8 +141,7 @@ const Departure = () => {
             type="button"
             className="btn btn-outline-warning"
             onClick={() => {
-              if (departure.length / 15 > currentPage)
-                setCurrentPage(currentPage + 1);
+              if (departure.length / 15 > currentPage) setCurrentPage(currentPage + 1);
             }}
           >
             Next

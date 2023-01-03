@@ -62,12 +62,12 @@ const Arrival = () => {
           <tr style={{ backGroundColor: "black" }}>
             <span
               style={{
-                marginLeft: 50,
+                marginLeft: 40,
                 color: "yellow",
                 fontFamily: "Chakra Petch, sans-serif",
               }}
             >
-              To
+              From
             </span>
             <span
               style={{
@@ -118,21 +118,7 @@ const Arrival = () => {
         </thead>
         <tbody>
           {theFlights.map((value) => {
-            return (
-              <SingleFlight
-                displayFlight={(id, type) => displayFlight(id, type)}
-                key={value.id}
-                destination={value.departure.airport}
-                id={value.id}
-                flightNum={flightFun(value.flightNumber)}
-                carrier={value.carrier}
-                time={value.arrival.scheduled}
-                gate={value.arrival.gate}
-                status={value.status}
-                trick={trick}
-                getMap={getMap}
-              />
-            );
+            return <SingleFlight displayFlight={(id, type) => displayFlight(id, type)} key={value.id} destination={value.departure.airport} id={value.id} flightNum={flightFun(value.flightNumber)} carrier={value.carrier} time={value.arrival.scheduled} gate={value.arrival.gate} status={value.status} trick={trick} getMap={getMap} />;
           })}
         </tbody>
       </table>
@@ -154,8 +140,7 @@ const Arrival = () => {
             type="button"
             className="btn btn-outline-warning"
             onClick={() => {
-              if (arrivals.length / 15 > currentPage)
-                setCurrentPage(currentPage + 1);
+              if (arrivals.length / 15 > currentPage) setCurrentPage(currentPage + 1);
             }}
           >
             Next

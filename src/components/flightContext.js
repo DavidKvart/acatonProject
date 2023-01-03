@@ -1,10 +1,10 @@
 import React from "react";
-import { usarrivalEstimateate } from "react";
+
 import { departureApi } from "./data";
 import { arrivalApi } from "./data";
 import { useState } from "react";
 import { airport } from "./data";
-import { useEffect } from "react";
+
 import { useNavigate } from "react-router-dom";
 
 export const FlightContext = React.createContext("");
@@ -14,8 +14,8 @@ let fillteredDeparture = departureApi.data.map((flight, index) => {
   let message = "";
 
   if (parseInt(delaytime) > 0) {
-    message = "LATE";
-  } else message = "ON TIME";
+    message = "ON TIME";
+  } else message = "LATE";
 
   return {
     id: index,
@@ -66,8 +66,8 @@ let fillteredArrival = arrivalApi.data.map((flight, index) => {
   }
   let message = "";
   if (delaytime > 0) {
-    message = "LATE";
-  } else message = "ON TIME";
+    message = "ON TIME";
+  } else message = "LATE";
 
   return {
     id: index,
@@ -101,6 +101,13 @@ const ContextProvider = ({ children }) => {
   const [departure, setDeparture] = useState(fillteredDeparture);
   const [destLat, setDestLat] = useState(51.509865);
   const [destLon, setDestLon] = useState(-0.118092);
+  const [pickedFlight, setPicked] = useState("AT228");
+
+  console.log(departure);
+  const handlePicked = (val) => {
+    setPicked(val.value.toUpperCase());
+    navigate("/table/single");
+  };
   let airportArr = Object.entries(airport);
   const displayFlight = (id, type) => {
     let airportIcao = "";
@@ -124,7 +131,7 @@ const ContextProvider = ({ children }) => {
     }
   };
 
-  return <FlightContext.Provider value={{ displayFlight, arrivals, departure, destLat, destLon }}>{children}</FlightContext.Provider>;
+  return <FlightContext.Provider value={{ pickedFlight, handlePicked, pickedFlight, displayFlight, arrivals, departure, destLat, destLon }}>{children}</FlightContext.Provider>;
 };
 
 export default ContextProvider;
